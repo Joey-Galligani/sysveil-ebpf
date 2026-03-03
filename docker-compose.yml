@@ -1,5 +1,6 @@
 services:
   builder:
+    image: sysveil-ebpf-builder
     build: .
     platform: linux/amd64
     volumes:

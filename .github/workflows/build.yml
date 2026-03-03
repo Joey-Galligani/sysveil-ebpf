@@ -22,7 +22,14 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock', 'Cargo.toml', 'src/**') }}
 
       - name: Build image
-        run: docker compose build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: sysveil-ebpf-builder
+          platforms: linux/amd64
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: Build project
         run: docker compose run --rm builder cargo build --release --target x86_64-unknown-linux-gnu
