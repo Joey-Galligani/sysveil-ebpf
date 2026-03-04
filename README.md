@@ -1,5 +1,4 @@
-# sysveil-ebpf
-Rust-based eBPF syscall behavioral engine that maps, analyzes, and scores live syscall activity to detect anomalous or malicious process behavior with future enforcement capabilities via BPF LSM.
+# Tools using eBPF in Rust
 
 ## Build (Mac M3 → Linux x86_64)
 
