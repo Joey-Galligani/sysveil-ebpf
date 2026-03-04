@@ -1,4 +1,6 @@
-# Tools using eBPF in Rust
+# Network Metrics ebpf
+
+Rust-based eBPF to do network metrics.
 
 ## Build (Mac M3 → Linux x86_64)
 
