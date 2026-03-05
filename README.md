@@ -1,8 +1,8 @@
 # Tools using eBPF in Rust
 
-## 1. Network Capture tool
+## 1. Block request from malicious IP
 
-Using XDP, this app copie and past all paquets in pcap file.
+Using XDP, this app drop paquets comming malicious IP list.
 
 ---
 
